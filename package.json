@@ -33,7 +33,7 @@
 	"homepage": "https://github.com/caret-collective/truecharts-domain-calc",
 	"devDependencies": {
 		"@biomejs/biome": "2.4.15",
-		"cypress": "^14.4.0",
+		"cypress": "^15.16.0",
 		"gulp": "^5.0.0",
 		"gulp-connect": "^5.7.0",
 		"gulp-copy": "^5.0.0",
