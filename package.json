@@ -13,7 +13,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/twocaretcat/truecharts-domain-calc.git"
+		"url": "git+https://github.com/caret-collective/truecharts-domain-calc.git"
 	},
 	"keywords": [
 		"kubernetes",
@@ -28,9 +28,9 @@
 	"author": "twocaretcat",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/twocaretcat/truecharts-domain-calc/issues"
+		"url": "https://github.com/caret-collective/truecharts-domain-calc/issues"
 	},
-	"homepage": "https://github.com/twocaretcat/truecharts-domain-calc",
+	"homepage": "https://github.com/caret-collective/truecharts-domain-calc",
 	"devDependencies": {
 		"@biomejs/biome": "2.4.15",
 		"cypress": "^14.4.0",
