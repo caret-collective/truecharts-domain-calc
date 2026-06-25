@@ -27,19 +27,25 @@
   <br/>
 </div>
 
+> [!NOTE]
+> This is for reference only. If you have access to your TrueNAS system, I would recommend installing and running [HeavyScript](https://github.com/Heavybullets8/heavy_script) to get domain names programmatically instead of using this tool. For example, you can run `heavyscript dns` to get DNS entries for the main services of your apps, or `heavyscript -a` to get DNS entries for all accessible services.
+
 ## 👋 About
 
-An online tool to find the internal domain name of a [TrueCharts](https://truecharts.org/charts/description_list/) app. Enter the name of the app and service you are working with, and the internal domain will be generated.
+An online tool to find the internal domain name of a [TrueCharts](https://truecharts.org/charts/description_list/) app. Enter the name of the app and service you are working with, and the internal domain will be generated in real time.
 
 Based on information from the [TrueCharts documentation](https://truecharts.org/manual/SCALE/guides/linking-apps/) and the [Kubernetes DNS specification](https://github.com/kubernetes/dns/blob/master/docs/specification.md).
 
-> [!NOTE]
-> This is for reference only. If you have access to your TrueNAS system, I would recommend installing and running [HeavyScript](https://github.com/Heavybullets8/heavy_script) to get domain names programmatically instead of using this tool. For example, you can run `heavyscript dns` to get DNS entries for the main services of your apps, or `heavyscript -a` to get DNS entries for all accessible services.
+### Screenshots
+
+| ![Screenshot of the homepage](docs/screenshot.png) |
+| -------------------------------------------------- |
+| _Homepage_                                         |
 
 ## 📦 Installation
 
 1. Install tools:
-   - Node.js and NPM. (see [nodejs.org](https://nodejs.org/) for more details)
+   - Node.js and NPM (see [nodejs.org](https://nodejs.org/) for more details)
    - `gulp-cli` with `npm install --global gulp-cli`
 2. Download the source code:
    - Clone the repo with `https://github.com/caret-collective/truecharts-domain-calc.git`, or
