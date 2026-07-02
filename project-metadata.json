@@ -1,11 +1,13 @@
 {
 	"$schema": "https://johng.io/schema/project-metadata.json",
 	"name": "TrueCharts Domain Calculator",
-	"background": "An online tool to find internal domain names of certain TrueNAS apps. This project was created to solve a personal need and as a way to learn more about the DNS-based service discovery mechanism that Kubernetes uses.",
+	"background": "Built a browser-based TrueCharts domain calculator that turns app, service, and port inputs into Kubernetes service DNS names for TrueNAS SCALE users. Implemented the static TypeScript, SCSS, and Gulp app with Cypress regression coverage, Biome linting, and GitHub Actions deployment to GitHub Pages so users can verify internal service names without shell access.",
 	"logoPath": "src/android-chrome-512x512.png",
 	"category": "App",
 	"subcategory": "Web",
-	"technologies": ["Kubernetes", "Cypress", "Gulp"],
+	"technologies": ["Cypress", "GitHub Actions", "Gulp", "Kubernetes", "Node.js"],
+	"tools": ["Biome", "Dependabot", "GitHub", "Git"],
+	"topics": ["Automated Testing", "CI/CD", "End-to-End Testing", "OSS", "Static Code Analysis"],
 	"schema": {
 		"type": "Web",
 		"applicationCategory": "Developer",
