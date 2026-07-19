@@ -25,12 +25,33 @@
 		"truenas-scale",
 		"truecharts"
 	],
-	"author": "twocaretcat",
+	"author": {
+		"name": "John Goodliff",
+		"url": "https://johng.io"
+	},
+	"funding": [
+		{
+			"type": "individual",
+			"url": "https://johng.io/funding"
+		},
+		{
+			"type": "GitHub Sponsors",
+			"url": "https://github.com/sponsors/twocaretcat"
+		},
+		{
+			"type": "Patreon",
+			"url": "https://patreon.com/twocaretcat"
+		},
+		{
+			"type": "Brave Creators",
+			"url": "https://publishers.basicattentiontoken.org/en/c/johng"
+		}
+	],
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/caret-collective/truecharts-domain-calc/issues"
 	},
-	"homepage": "https://github.com/caret-collective/truecharts-domain-calc",
+	"homepage": "https://truecharts-domain-calc.johng.io",
 	"devDependencies": {
 		"@biomejs/biome": "2.4.15",
 		"cypress": "^15.16.0",
