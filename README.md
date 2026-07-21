@@ -1,29 +1,21 @@
 <!-- Project Header -->
 <div align="center">
   <img class="projectLogo" src="src/android-chrome-512x512.png" alt="Project logo" title="Project logo" width="256">
-
   <h1 class="projectName">
     <a href="https://truecharts-domain-calc.johng.io/" title="TrueCharts Domain Calculator">
       TrueCharts Domain Calculator
     </a>
   </h1>
-
   <p class="projectBadges">
     <img src="https://johng.io/badges/category/App.svg" alt="Project category" title="Project category">
     <img src="https://img.shields.io/github/languages/top/caret-collective/truecharts-domain-calc.svg" alt="Language" title="Language">
     <img src="https://img.shields.io/github/repo-size/caret-collective/truecharts-domain-calc.svg" alt="Repository size" title="Repository size">
-    <a href="LICENSE">
-      <img src="https://img.shields.io/github/license/caret-collective/truecharts-domain-calc.svg" alt="Project license" title="Project license"/>
-    </a>
-    <a href="https://truecharts-domain-calc.johng.io/" title="Project URL">
-			<img src="https://img.shields.io/website?url=https%3A%2F%2Ftruecharts-domain-calc.johng.io&up_message=truecharts-domain-calc.johng.io%20%E2%86%97" alt="Project URL" title="Project URL">
-		</a>
+    <a href="LICENSE"><img src="https://img.shields.io/github/license/caret-collective/truecharts-domain-calc.svg" alt="Project license" title="Project license"/></a>
+    <a href="https://truecharts-domain-calc.johng.io/" title="Project URL"><img src="https://img.shields.io/website?url=https%3A%2F%2Ftruecharts-domain-calc.johng.io&up_message=truecharts-domain-calc.johng.io%20%E2%86%97" alt="Project URL" title="Project URL"></a>
   </p>
-
   <p class="projectDesc">
     An online tool to find the internal domain name of a TrueCharts app
   </p>
-
   <br/>
 </div>
 
@@ -59,17 +51,33 @@ Based on information from the [TrueCharts documentation](https://truecharts.org/
 
 Fill out the following fields and the domain name will be updated automatically:
 
-- **Catalog App Name**: The name of the app as shown in the TrueCharts catalog. Examples: `traefik`, `plex`, etc.
+| Field                | Description                                                                                                                                                                                | Examples                       |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------ |
+| **Catalog App Name** | The name of the app as shown in the TrueCharts catalog.                                                                                                                                    | `traefik`, `plex`              |
+| **Custom App Name**  | The actual name of the app. Usually, this is the same as the catalog app name, but if you renamed the app when you created it, put its new name here. Otherwise, you can leave this blank. | `traefik-2`, `plex-for-family` |
+| **Service Name**     | The service name of the app. Some apps have multiple services running on different endpoints. You can leave this blank if you want to find the domain name for the main service.           | `metrics`, `redis`             |
+| **Port Number**      | The port number of the service. If you know the service is running on a specific port, enter it here.                                                                                      | `80`, `443`, `8080`            |
 
-- **Custom App Name**: The actual name of the app. Usually, this is the same as the catalog app name, but if you renamed the app when you created it, put its new name here. Otherwise, you can leave this blank. For example, if you have multiple instances of the same app running, they will have different names. Examples: `traefik-2`, `plex-for-family`, etc.
+## 🛟 Support
 
-- **Service Name**: The service name of the app. Some apps have multiple services running on different endpoints. You can leave this blank if you want to find the domain name for the main service. Otherwise, put the service name here. Examples: `metrics`, `redis`, etc.
+Need help? See the [support resources](https://github.com/twocaretcat/.github/blob/main/docs/SUPPORT.md) for information on how to:
 
-- **Port Number**: The port number of the service. If you know the service is running on a specific port, enter it here. Examples: `80`, `443`, `8080`, etc.
+- request features
+- report bugs
+- ask questions
+- report security vulnerabilities
 
 ## 🤝 Contributing
 
-Contributions, issues, and forks are welcome.
+Want to help out? Pull requests are welcome for:
+
+- feature implementations
+- bug fixes
+- translations
+- documentation
+- tests
+
+See the [contribution guide](../../contribute) for more details.
 
 ### Project Structure
 
@@ -85,6 +93,8 @@ Contributions, issues, and forks are welcome.
 - Run `npm start` to start the web server
 
 ## 🧾 License
+
+Copyright © 2026 [John Goodliff](https://johng.io/r/truecharts-domain-calc) ([@twocaretcat](https://github.com/twocaretcat)).
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
