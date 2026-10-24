@@ -346,4 +346,20 @@ describe('Domain Name Generator', () => {
 				.should('eq', testCase.expectedDomain);
 		});
 	});
+	it('shows only one notification after multiple input changes', () => {
+		cy.visit('/');
+
+		cy.get('#catalogAppName').clear().type('first-app');
+		cy.get('#catalogAppName').clear().type('second-app');
+
+		cy.window().then((win) => {
+			cy.stub(win.document, 'execCommand').returns(true);
+		});
+
+		cy.get('#output').click();
+
+		cy.get('.notification')
+			.should('have.length', 1)
+			.and('contain.text', 'Copied to clipboard!');
+	});
 });

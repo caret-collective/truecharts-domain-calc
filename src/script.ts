@@ -70,12 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 
 		output.textContent = domainName;
-
-		output.addEventListener('click', () => {
-			copyToClipboard(domainName);
-			notifyUser('Copied to clipboard!');
-		});
 	}
+
+	output.addEventListener('click', () => {
+		copyToClipboard(output.textContent ?? '?');
+		notifyUser('Copied to clipboard!');
+	});
 
 	function copyToClipboard(text: string): void {
 		const el: HTMLTextAreaElement = document.createElement('textarea');
